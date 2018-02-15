@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> About us </title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+	<link href="css/lightbox.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  </head>
+  <body>
+  
+	<div class="upArrow">
+
+	<a href="#"><img src="images/arrow.png" alt="arrow"></a>
+
+	</div><!--upArrow-->
+  
+	<header>
+	
+		<div class="container">
+		
+			<h2 class="email"> <a href="mailto:sairajcivilworks@gmail.com"> <span class="icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </span> &nbsp; sairajcivilworks@gmail.com </a> </h2> 
+			
+			<h2 class="phone"> <span class="icon"> <i class="fa fa-phone" aria-hidden="true"></i> </span> + 91-99603 75626 | + 91-91308 97007 </h2>
+			
+		</div><!--container-->
+				
+	</header>			
+  
+	<nav class="navbar navbar-default">
+		<div class="container">
+			
+			
+		
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+				</div>
+			
+				<div class="home text-right">
+					<a href="index.html"><img src="images/home.png" alt="homeicon"></a>
+				</div>
+			
+		
+			
+		</div><!--container-->
+	</nav>
+	
+	
+	<div class="content2">
+		<div class="container">
+		<div class="row">
+		
+		<div class="col col-md-12">
+		
+		<h3> ABOUT US </h3>
+				
+				<p> About a decade ago, we entered the field of construction to stay on course with time and contribute to the evolution. And today we’re one of the pioneers in the industry. We’ve constantly brought to the table the most contemporary blueprints on the foundation of trust. Our undying habit of delivering on time and delivering exceptional value has helped us become one of the most sought-after construction partners. </p>
+				
+				<p> Sairaj Civil Works is one of the well organize civil engineering and construction companies in Pune, providing professional civil engineering works and general building works. Sairaj strived to always provide customers with quality services and products. </p>
+				
+		<h3> MISSION STATEMENT </h3>
+				
+				<p> We aims to provide professional service to its clients’ satisfaction by providing service excellence, honoring deadlines, and personalized design according toclients’ requirements. </p>
+				
+		</div> <!-- col -->
+		
+		<div class="col col-md-4">
+		
+		<h3> OUR WORK SCOPE </h3>
+				
+		<p> a)	 Residential Buildings </p> <ul> <li> Bungalows </li>  <li> Flats </li> </ul> 
+		<p> b)	RCC Structures </p>
+		<ul> <li> Heavy Foundation (Furnace Induction) </li>
+		<li> ETP  </li> <li> Water Tank </li> <li> Reactor </li> </ul> 
+		<p> c)	Industrial Building  </p>
+		<ul> <li> Column & beam frame work  </li>
+		<li> VDF Flooring </li> <li> VDF Roads </li> 
+		<li> Foundations </li> <li> Septic Tanks </li> </ul>
+		<p> d)	Land developing </p>
+
+		</div> <!-- col -->
+		
+		<div class="col col-md-8">
+		
+		<img src="images/abt_pic.jpg" class="img-responsive" alt="abt_pic"> 
+		
+		
+		</div> <!-- col -->
+		
+		</div> <!-- row -->
+	</div> <!-- container -->
+	</div> <!-- content -->
+	
+	
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<p> © Copyright Sairaj Civil Works. All right reserved </p>
+				</div> <!--row-->
+			</div> <!--container-->
+		</footer> <!--footer-->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	
+	<script>
+
+		$(window).scroll(function(){
+
+		var scrollPos = $(window).scrollTop();
+
+		if(scrollPos > 500)
+		{
+
+			$(".upArrow").fadeIn();
+
+		}
+
+		else{
+
+		$(".upArrow").fadeOut();
+
+		}
+
+		});
+
+				$(".upArrow").click(function(){
+
+				$("html,body").animate({scrollTop:0},1000);
+
+			});
+
+			$(".navbar-collapse a").click(function(e){
+				e.preventDefault();
+				$(".navbar-collapse a").removeClass("active");
+				$(this).addClass("active");
+
+				var targetid = $(this).attr("href");
+				var headerHeight = $("header").outerHeight();
+				var targetPos = $(targetid).offset().top - headerHeight;
+
+				console.log(targetid)
+
+				$("html,body").animate({scrollTop:targetPos},1000);
+			});
+
+		</script>
+
+  </body>
+</html>
