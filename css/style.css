@@ -207,6 +207,12 @@ hr {width: 120px;
 
 .projects .box .om {background-image: url(../images/OM/bg.jpg);
 					background-size: cover;}
+					
+.projects .box .ashoka {background-image: url(../images/ASHOKA/bg.jpg);
+					background-size: cover;}
+					
+.projects .box .bungalow {background-image: url(../images/BUNGALOW/bg.jpg);
+					background-size: cover;}					
 
 .projects .box .acd {background-image: url(../images/ACD/bg.jpg);
 					background-size: cover;}	
